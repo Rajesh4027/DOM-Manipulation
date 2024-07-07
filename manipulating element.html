@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li style="display: none;">Project</li>
+    </ul>    
+
+    <script>
+        //appendChild() method
+
+        let menu = document.getElementById("menu");
+        
+        // let list = document.createElement("li");
+
+        // list.innerHTML = "Contact"
+
+        // menu.appendChild(list)
+
+        // console.log(menu.textContent);
+
+        // menu.textContent = "hello"
+
+        menu.innerHTML = "<p>hello world</p>"
+        menu.textContent = "<p>hello world</p>"
+
+
+    </script>
+</body>
+</html>
