@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute method</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username">
+    <script>
+        //attribute method
+        let input = document.getElementById("username");
+        console.log(input.attributes);
+        console.log(input.getAttribute("type"));
+        console.log(input.getAttribute("placeholder"));
+
+        input.setAttribute("class","user");
+        console.log(input.attributes);
+
+        
+
+
+    </script>
+</body>
+</html>
