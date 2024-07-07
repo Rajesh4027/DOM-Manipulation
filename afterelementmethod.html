@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
 
-    <h1>hello world</h1>
+    <!-- <h1>hello world</h1> -->
+
+    <!-- append method -->
     
     
 </head>
 <body>
+    <!-- <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Project</li>
+    </ul> -->
+
+    <div id="myDiv"></div>
     <script>
         
-        let h1 = document.querySelector("h1")
+        // let h1 = document.querySelector("h1")
 
-        let get = document.createElement("p")
+        // let get = document.createElement("p")
 
-        get.innerText = "hello meow"
+        // get.innerText = "hello meow"
 
-        h1.after(get)
+        // h1.after(get)
+
+        //append method
+
+      
+        let myDiv = document.getElementById("myDiv");
+        let p = document.createElement("p");
+        let strong = document.createElement("strong")
+        let mytextNode = document.createTextNode("illuminati")
+
+        p.innerText = "helloworld";
+        strong.innerText = "hello meow";
+
+        myDiv.appendChild(p,strong,mytextNode,'some of the content')
+        
+        
+
+
+
+        
         
 
         
