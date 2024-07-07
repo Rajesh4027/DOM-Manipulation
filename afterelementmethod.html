@@ -20,7 +20,7 @@
     </ul> -->
 
     <div id="myDiv">
-        <li>Home</li>
+        <li id="hell">Home</li>
         <li>Blog</li>
         <li>About</li>
     </div>
@@ -50,7 +50,7 @@
         
         // parent node
 
-        // let menu = document.createElement("div")
+        let menu = document.getElementById("myDiv");
 
         // let p = document.createElement("p")
         // let strong = document.createElement("strong")
@@ -61,8 +61,25 @@
         // console.log(menu);
 
         // i
-        let myDiv = document.getElementById("myDiv");myDiv.insertAdjacentHTML("afterbegin","<li>hello</li>");
+        // let myDiv = document.getElementById("myDiv");myDiv.insertAdjacentHTML("afterbegin","<li>hello</li>");
 
+        //replacechild element
+
+        // let element = document.getElementById("hell")
+        // let elements = document.createElement("li")
+        // elements.textContent = "Cheese"
+        // menu.replaceChild(elements,element)
+
+        // let newnode = menu.cloneNode(true); 
+        // console.log(newnode);
+
+
+        // menu.removeChild(menu.lastElementChild)
+
+        let hello = document.createElement("p")
+        hello.textContent = "dafdfad"
+
+        menu.insertBefore(hello,menu.lastElementChild)
 
         
         
