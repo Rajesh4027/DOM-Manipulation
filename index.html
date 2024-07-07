@@ -6,7 +6,7 @@
     <title>Dom</title>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <p id="message">Javascript Dom</p>
         <p id="message">Javascript Dom</p>
        
@@ -23,8 +23,14 @@
             </div>
         <h1 class="msg">second heading</h1>
         <h1 class="msg">third heading</h1>
-        <h1>fourth heading</h1>
+        <h1>fourth heading</h1> -->
 
+        <!-- traversing to select of an element to use queryselector -->
+            <div class="title">
+                <p class="child">Welcome </p>
+            </div>
+
+            <div class="title1"><p>welcome to myWebsite page1</p><p>welcome to myWebsite page2</p><p>welcome to myWebsite page3</p><p>welcome to myWebsite page4</p></div>
 
     </div>
     <script>
@@ -37,7 +43,24 @@
         // let cont = document.getElementById("container")
         // let msg = cont.getElementsByClassName("msg")
         // console.log(msg);
-        let
+        // let msg = document.querySelectorAll("div h1")//we can select the multiple elements in this way to use
+        // console.log(msg); 
+
+        //traversing to select element
+        // let text = document.querySelector(".child")
+        // console.log(text.parentNode);
+
+        let parent = document.querySelector(".title1")
+        console.log(parent.firstChild);
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+        console.log(parent.childNodes);
+
+        //select next siblings,previous siblings of an element
+
+
+
+
 
     </script>
     <script src="index.js"></script>
