@@ -34,12 +34,15 @@
 
             <!-- select the next siblings and previous siblings -->
 
-            <div class="title">
+            <!-- <div class="title">
                 <p>welcome to page1</p>
                 <p class="second">welcome to page2</p>
                 <p>welcome to page3</p>
                 <p>welcome to page4</p>
-            </div>
+            </div> -->
+
+
+            <!-- manipulating elements -->
 
 
 
@@ -68,10 +71,20 @@
         // console.log(parent.childNodes);
 
         // select next siblings,previous siblings of an element
-        let second = document.querySelector(".second")
+        // let second = document.querySelector(".second")
 
-        console.log(second.previousElementSibling); 
-        console.log(second.nextElementSibling);
+        // console.log(second.previousElementSibling); 
+        // console.log(second.nextElementSibling);
+
+        //manipulating elements
+
+        let div = document.createElement("div");
+        div.innerHTML = "<p>This is new website 1</p>"
+
+        document.body.appendChild(div)
+        div.id = "title"
+        console.log(div);
+        
         
 
 
