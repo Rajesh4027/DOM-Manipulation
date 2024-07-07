@@ -4,20 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute method</title>
+    <style>
+        input{
+            background-color: red;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="username" placeholder="username">
+    <input type="text" id="username" placeholder="username" ">
+    <h1 class="main message" id="title">Hello world</h1>
     <script>
         //attribute method
         let input = document.getElementById("username");
-        console.log(input.attributes);
-        console.log(input.getAttribute("type"));
-        console.log(input.getAttribute("placeholder"));
+        // console.log(input.attributes);
+        // console.log(input.getAttribute("type"));
+        // console.log(input.getAttribute("placeholder"));
 
-        input.setAttribute("class","user");
-        console.log(input.attributes);
+        // input.setAttribute("class","user");
+        // console.log(input.attributes);
+        // console.log(input.hasAttribute("id"));
 
-        
+        // input.removeAttribute("placeholder")
+        // console.log(input);
+
+        // console.log(input.style.backgroundColor,input.style.fontSize);
+        // input.style.padding= "90px";
+        // input.style.cssText += "width:200px";
+        // console.log(input);
+
+        //we use get computed style method
+        // console.log(window.getComputedStyle(input).backgroundColor);
+    
+
+        let title = document.getElementById("title")
+        title.className += "New";
+        console.log(title.className);
+
+        title.classList.add("new","yellow") // multiple class name should created
+        title.classList.remove("new","yellow");
+        title.classList.replace("main","hello"); 
+       
+        console.log(title.classList);console.log( title.classList.contains("hello"));
+
+        title.classList.toggle("hi")
 
 
     </script>
