@@ -19,7 +19,11 @@
         <li>Project</li>
     </ul> -->
 
-    <div id="myDiv"></div>
+    <div id="myDiv">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>About</li>
+    </div>
     <script>
         
         // let h1 = document.querySelector("h1")
@@ -33,17 +37,28 @@
         //append method
 
       
-        let myDiv = document.getElementById("myDiv");
-        let p = document.createElement("p");
+        // let myDiv = document.getElementById("myDiv");
+        // let p = document.createElement("p");
+        // let strong = document.createElement("strong")
+        // let mytextNode = document.createTextNode("illuminati")
+
+        // p.innerText = "helloworld";
+        // strong.innerText = "hello meow";
+
+        // myDiv.append(p,strong,mytextNode,'some of the content')
+        
+        
+        // parent node
+
+        let menu = document.createElement("div")
+
+        let p = document.createElement("p")
         let strong = document.createElement("strong")
-        let mytextNode = document.createTextNode("illuminati")
 
-        p.innerText = "helloworld";
-        strong.innerText = "hello meow";
+        menu.append(p)
+        menu.prepend(strong)
 
-        myDiv.append(p,strong,mytextNode,'some of the content')
-        
-        
+        console.log(menu);
 
 
 
