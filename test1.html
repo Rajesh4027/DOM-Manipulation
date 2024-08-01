@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      div {
+        padding: 20px;
+        background-color: darkorchid;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        margin: 10px;
+        font-size: 15px;
+      }
+      button:hover {
+        background-color: darkmagenta;
+        color: white;
+        box-shadow: 0 0 10px violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="one">Message</h1>
+      <button o="msg()" id="cy">Click me</button>
+      <button id="btn1">Click me</button>
+      <button id="btn2">Click me</button>
+    </div>
+
+    <script>
+      let a = document.getElementById("one");
+      function msg() {
+        a.textContent = "Welcome to dom";
+        a.style.color = "coral";
+      }
+
+      let btn = document.getElementById("btn1");
+      btn.onclick = function () {
+        a.textContent = "this is second button";
+        a.style.color = "tomato";
+      };
+
+      let button = document.getElementById("btn2");
+
+      button.addEventListener("click", () => {
+        a.textContent = "this is third button";
+        a.style.color = "yellow";
+      });
+    </script>
+  </body>
+</html>
