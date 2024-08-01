@@ -7,7 +7,7 @@ let totalcount = document.getElementById('total')
 let valuecount = 0;
 
 
-qty.textContent = 0
+qty.textContent = valuecount
 plus.addEventListener('click',()=>{
     let add = ++valuecount;
     qty.textContent = valuecount
