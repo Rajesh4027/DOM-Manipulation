@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: bold;
+                
+        }
+        body{
+            background: #7b4397;
+            background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  
+            background: linear-gradient(to right, #dc2430, #7b4397); 
+            
+        }
+        table{
+            font-size: 20px;
+            margin: 0 auto; 
+            color: white;
+            
+        }
+        fieldset{
+            margin:0 350px;
+            border-radius: 10px;
+            background: #673AB7;
+            background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  
+            background: linear-gradient(to right, #512DA8, #673AB7); 
+        }
+        form{
+            margin-top: 40px;
+        }
+
+        td{
+            padding: 5px;
+            padding-top: 18px;
+        }
+        button{
+            padding: 10px 230px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .fun{
+            width: 75%;
+            padding: 8px 10px;
+            font-size: 16px;
+        }
+        .fun:hover{
+            box-shadow: 0 0 10px #50BFE6;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px #50BFE6;
+        }
+        input[type="radio"]:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <table>
+                <tr>
+                    <td><legend>Name:</legend></td>
+                    <td><input class="fun" type="text" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><legend>Email:</legend></td>
+                    <td><input class="fun" type="email" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><legend>Password:</legend></td>
+                    <td><input class="fun" type="password" placeholder="Enter your password"></td>
+                </tr>
+                <tr>
+                    <td><legend>Phone Number:</legend></td>
+                    <td><input class="fun" type="number" placeholder="Enter your phone number"></td>
+                </tr>
+                <tr>
+                    <td><legend>Gender:</legend></td>
+                    <td>Male:<input name="radio" type="radio">
+                        Female:<input name="radio" type="radio">
+                        Others:<input name="radio" type="radio"></td>
+                </tr>
+                <tr>
+                    <td><legend>Language:</legend></td>
+                    <td><select class="fun" >
+                            <option value="">Select language</option>
+                            <option value="">Tamil</option>
+                            <option value="">English</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><legend>Zip Code:</legend></td>
+                    <td><input class="fun" type="number" placeholder="Enter the zipcode"></td>
+                </tr>
+                <tr>
+                    <td><legend>About:</legend></td>
+                    <td><textarea class="fun" name="" id="" cols="20" rows="3" placeholder="Write About Yourself"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><button>Register</button></td>
+                </tr>
+            </table>
+              
+        </fieldset>
+    </form>
+</body>
+</html>

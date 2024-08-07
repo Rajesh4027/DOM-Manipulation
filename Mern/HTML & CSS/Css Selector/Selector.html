@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attribute Selector</title>
+</head>
+<style>
+    h1[align="left"]{
+        background-color: yellow;
+        color: aqua;
+    }
+    h1[align="right"]{
+        background-color: blue;
+        color: yellow;
+    }
+    h1[align="center"]{
+        background-color: green;
+        color: red;
+    }
+    /* Group Selector */
+    #mno,.one,#yel {
+        color:yellow;
+        background-color: black;
+    }
+    /* Pesudo clss Selector */
+    a:hover {
+        background-color: red;
+        color:white;
+    }
+    a:visited{
+        background-color: yellow;
+        color: aqua;
+    }
+    #hel::first-letter{
+        color: orange;
+    }
+    .heal::after{
+        content: "But Don't Sleep";
+    }
+    #he::before{
+        content: "Universal Truth ";
+    }
+    span{
+        color: yellow;
+        background-color: green;
+    }
+</style>
+<body>
+    <h1 align="left">Hello world</h1>
+    <h1 align="center">Hello world 2</h1>
+    <h1 align="right">Hello world 2</h1>
+    <!-- Group Selector -->
+    <h2 id="mno">Hello waterbottle</h2>
+    <h2 class="one">Hello waterbottle</h2>
+    <h2 id="yel">Hello waterbottle</h2>
+    <!-- Pseudo Class Selector -->
+    <a href="../InlineCss.html">Subscribe Me!</a>
+    <!-- Pseduo Element Selector -->
+    <h1 id="hel">Imagine <span>your</span> Aim</h1>
+    <h1 class="heal">Imagine your Aim</h1>
+    <h1 id="he">Imagine your Aim</h1>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Seminar Table</title>
+   <style>
+
+    td{
+        padding: 5px;
+    }
+    h1{
+        margin-top: -10px;
+    }
+    .tableRow{
+        text-align: center;
+        font-weight: bold;
+    }
+   </style>
+</head>
+<body>
+    <h1><ins>Seminar Table</ins></h1>
+    <table border="2px">
+        <thead>
+            <tr class="tableRow">
+                <td rowspan="3">Day</td>
+                <td colspan="3">Seminar</td>
+                </tr>
+                <tr class="tableRow">
+                <td colspan="2">Schedule</td>
+                <td rowspan="2">Topic</td>
+                </tr>
+                <tr class="tableRow">
+                <td>Begin</td>
+                <td>End</td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8.00am</td>
+                <td rowspan="2">5.00pm</td>
+                <td>Introduction to XML</td>
+                </tr>
+                <tr>
+                <td>Validity DTD and Relax NG</td>
+                </tr>
+                <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8.00am</td>
+                <td>11.00am</td>
+                <td rowspan="2">Xpath</td>
+                </tr>
+                <tr>
+                <td>11.00am</td>
+                <td>2.00pm</td>
+        
+                </tr>
+                <tr>
+                <td>2.00pm</td>
+                <td>2.00pm</td>
+                <td>XSL Transformation</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td>8.00am</td>
+                <td>12.00pm</td>
+                <td>XSL Formating Objects</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>

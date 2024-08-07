@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+.container>div{
+    color: yellow;
+    text-decoration: none;
+}
+p,td{
+    padding-top: 20px;
+}
+input[type="text"],input[type="email"],textarea,button{
+    margin-left: 20px;
+}
+
+</style>
+<body>
+        <div class="row bg-warning  position-fixed fixed-top">
+            <div class="container col bg-success d-flex flex-column overflow-hidden justify-content-center align-items-center vh-100 ">
+                    <div>Home</div>
+                    <div>Menu</div>
+                    <div>Music</div>
+                    <div>Jobs</div>
+            </div>
+            <div class="main col-10 px-0">
+                <h3 class="bg-primary p-5 " >
+                    Jobs at JavaJam
+                </h3>
+                <div class="ui px-5 ">
+                    <p >
+                        Hello,customer welcome to our coffee shop javajam coffee house <br>please share your thoughts and experience in our shop
+                    </p>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td><label>Name:</label></td>
+                                <td><input type="text" placeholder="Enter your name"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email: </label></td>
+                                <td><input type="email" placeholder="Enter your email"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Experience: </label></td>
+                                <td><textarea  id="" cols="30" rows="4"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button >Submit</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer text-center bg-secondary fixed-bottom w-100">
+            <span>copyright &copy; javajam coffee houst limited.</span><br>
+            <a href="www.coffeehouse.co.in" class="">www.cofeehouse.co.in</a>
+        </div>
+</body>
+</html>

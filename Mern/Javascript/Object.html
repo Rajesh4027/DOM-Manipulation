@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Literal</h1>
+
+    <script>
+        console.log("helo world ");
+
+
+
+        let student = {}
+        student.name = "vicky"
+        student.age = 23
+        student.height = "160cm"
+        student.add = "chennai"
+
+        
+
+        console.log(student)
+
+        let teacher = {name:'vinoth',subject:"mern",height:"140.cm",age:23}
+
+        console.log(teacher);
+
+        let constable = new Object()
+
+        constable.name = "surabhi"
+
+        console.log(constable);
+
+
+        //functin constructor ways
+
+        function tesla(name,add,age){
+            this.name = name,
+            this.add = add,
+            this.age = age
+        }
+
+        let vino = new tesla("suresh","delhi",23)
+        let meow = new tesla("mano","tamilnadu",34)
+
+        console.log('vino', vino)
+        console.log('meow', meow)
+
+
+
+        //Object Reading
+
+
+        
+
+
+    </script>
+</body>
+</html>

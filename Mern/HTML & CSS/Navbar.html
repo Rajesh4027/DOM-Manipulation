@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NavBar</title>
+    <link rel="stylesheet" href="./FontAwesome/fontstyle/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0px;
+        font-family: "Poppins" , sans-serif;
+        
+         
+    }
+    body{
+        background-color: #fcfcfc;
+        
+    }
+    div{
+        background-color:#CCCCFF ;
+        padding:20px;
+        text-align: right;
+        box-shadow: 0 0 5px rgb(84, 184, 255);
+        
+    }
+    div>a{
+        text-decoration: none;
+        color: #5b5bf9;
+        font-size: large;
+        font-weight: 500;
+        padding: 6px 20px;
+        transition: .4s;
+        
+        
+    }
+    
+    a:hover{
+        background-color:#5b5bf9;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 0 5px #0357cc;
+        
+    }
+    
+    
+    a:focus{
+        
+        background-color: rgb(255, 75, 43);
+    }
+    span{
+        left: 0;
+        margin-left: 80px;
+        position: absolute;
+        top: 0;
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight:600 ;
+    }
+    span::first-letter{
+        color: red;
+
+    }
+    
+    
+
+</style>
+<body>
+    <div>
+        <span >Logo</span>
+        <a href=""><i class="fa-solid fa-house-chimney"></i> Home</a>
+        <a href=""><i class="fa-solid fa-calendar-day"></i> About</a>
+        <a href=""><i class="fa-solid fa-server"></i> Services</a>
+        <a href=""><i class="fa-solid fa-group-arrows-rotate"></i> Team</a>
+        <a href=""><i class="fa-solid fa-user"></i> Contact</a>
+    </div>
+</body>
+
+</html>

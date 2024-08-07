@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section</title>
+</head>
+
+<body>
+    <h1>section</h1>
+
+    <script>
+        // let a = 3
+        // let b = 6
+        // let temp;
+
+        // temp = a;
+        // a = b;
+        // b = temp;
+
+        // console.log("a =",a)
+        // console.log("b =",b)
+
+        // let a =40
+        // let b =27
+
+        // a = a+b  // 30
+        // b = a-b  // 10
+
+        // a = a-b
+
+        // console.log("a =",a)
+        // console.log("b =",b)
+
+        // let a = 5
+        // let b = 2
+        // let c = 3
+
+        // if(a>b && a>c){
+        //     console.log("a is larger number")
+        // }
+        // else if(b>a && b>c){
+        //     console.log("b is larger number")
+        // }
+        // else if(c>a && c>b){
+        //     console.log("c is larger number")
+        // }
+
+        let a = 250
+        let b = 200
+        let c = 300
+        let secondLarge;
+
+        if (a >= b && a >= c) {
+            if (b >= c) {
+                secondLarge = b
+            }
+            else {
+                secondLarge = c
+            }
+        }
+        else if (b >= a && b >= c) {
+            if (a >= c) {
+                secondLarge = a
+            }
+            else {
+                secondLarge = c
+            }
+        }
+        else{
+            if(a >= b){
+                secondLarge = a
+            }
+            else{
+                secondLarge = b
+            }
+        }
+
+        console.log("second larger number is:",secondLarge)
+
+
+        // let month = prompt("enter the month name")
+
+        // if(month=="jan" || month=="mar" || month=="may" || month=="jul" || month=="aug" || month=="oct" || month=="dec"){
+        //     console.log("31")
+        // }
+        // else if(month=="apr" || month=="jue" || month=="sep" || month=="nov"){
+        //     console.log("30")
+        // }
+        // else if(month=="feb"){
+        //     console.log("28/29")
+        // }
+
+        // let Amount = 5000
+        // let checkBalance = "If you check the balance type 1";
+        // let depositBalance = "If you deposit type 2";
+        // let withdrawBalance = "If you withdraw  money from in your account type 3";
+
+        // let allCredentials = checkBalance + "\n" + depositBalance + "\n" + withdrawBalance; 
+        // alert(allCredentials);
+
+        // let a = Number(prompt("enter the number"));
+
+        // switch(a){
+        //     case 1:     
+        //         console.log("Your Balace is:",Amount)
+        //     break;
+        //     case 2:
+        //         let amountDeposit = Number(prompt("enter Amount"));
+        //         console.log("Available Balace is:",Amount)
+        //         console.log("Your deposit amount is:",amountDeposit)
+        //         console.log("Total:",Amount+amountDeposit);
+        //         break;
+        //     case 3:
+        //         let amountWithdraw = Number(prompt("enter Amount"));
+        //         console.log("Your withdraw Amount is",amountWithdraw)
+        //         console.log("Your Balance is:",Amount-amountWithdraw)
+        //         break;    
+        //     default:
+        //     console.log("invalid")
+        // }
+       
+
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

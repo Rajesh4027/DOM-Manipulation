@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Application/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Application/bootstrap-4.0.0-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/Application/icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+    .hidden{
+        display: none;
+    }
+</style>
+<body>
+    <div class="navbar bg-danger ">
+        <a href="#" class="container-brand text-white">Zomato</a>
+        <div class="">
+            <button class="btn btn-light text-primary" id="log-id" >LogIN</button>
+        </div>
+    </div>
+
+    <section class="mt-2 px-3 lead ">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-danger">Cart:-</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, adipisci doloremque? Pariatur ex, maiores quas aspernatur dicta eius expedita! Sed fugit doloribus consequuntur adipisci, maxime quaerat mollitia quam corporis odit?
+                    Repelperferendis nulla commodi sed? Tempore incidunt sit esse doloribus eum veritatis dolores, magni, officiis velit ipsum odio iusto voluptatum? Ipsum suscipit laborum excepturi fuga provident optio!
+                    Explicabo eligendi minlam quia aliquid dolorem quod nisi officiis sunt numquam aliquam fuga odit voluptatem velit dolores quisquam vero tenetur magnam eveniet laboriosam deleniti. Ex, possimus tempore?
+                </p>
+                <button class="btn btn-danger">Check Out</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-3 mt-3">
+        <div class="row">
+            <div class="m-auto col-md-5 hidden" id="form-el">
+                <div class="card card-header bg-danger">
+                    <h4 class="text-white">LoginHere
+                        <button class="" id="close-btn" >
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </h4>
+                </div>
+                <div class="card-body "">
+                    <form>
+                        <div class="">
+                             <input type="text" placeholder="Username/userId" class="form-control">       
+                        </div>
+                        <div class="form-group mt-2 ">
+                                <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <div class="form-group mt-2 ">
+                            <button class="btn btn-danger" id="btn_log">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-bottom: 500px;">
+         
+    </div>
+
+    <script>
+        let login = document.getElementById('log-id')
+        let formsection = document.getElementById('form-el')
+        let close = document.getElementById('close-btn')
+
+        login.addEventListener('click',()=>{
+            formsection.classList.remove('hidden')
+        })
+
+        close.addEventListener('click',()=>{
+            formsection.classList.add('hidden')
+        })
+
+
+       
+    </script>
+</body>
+</html>

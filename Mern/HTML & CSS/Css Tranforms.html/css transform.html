@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css Transform</title>
+</head>
+<style>
+    #hel{
+        width: 400px;
+        height:400px;
+        margin: auto;
+        margin-top:50px;
+        box-shadow: 0 0 6px blue;
+        border-radius: 30px;
+        overflow: hidden;
+        }
+    #hel>img{
+        background-color: red;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        transition:all 3s linear 0s;
+        
+        
+    }
+    #hel>img:hover{
+        transform: scale(1.5);
+    }
+    
+</style>
+<body>
+    <div id="hel">
+        <img src="../Assignments/Images/plane-8616271_1280.jpg" alt="Image is not working">
+        <!-- <img src="../Assignments/Images/Sylvia.jpg" alt="Image is not working"> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Studnent Details</title>
+    <style>
+        *{
+            margin: 0px;
+
+        }
+        
+        fieldset{
+            background-color: aqua;
+            margin: 0px 250px;
+            border-radius: 10px;
+            margin-top: 20px;
+            
+        }
+        h1{
+            border: 5px black double;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: blue;
+        }
+        legend{
+            border: 2px aqua solid;
+            border-radius: 20px;
+            padding: 7px 10px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+        }
+        td{
+            padding: 5px;
+        }
+        input{
+            border-radius: 23px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+           <h1>
+            Student Registration Form
+           </h1>
+        <fieldset>
+            <legend>Student Information</legend>
+            <table>
+            
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" placeholder="Enter Student Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Father's Name:</label></td>
+                    <td><input type="text" placeholder="Enter Father's Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Mother's Name:</label></td>
+                    <td><input type="text" placeholder="Enter Mother's Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number:</label></td>
+                    <td><input type="number" placeholder="Enter the phoneno"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="email" placeholder="Enter the Email"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><input type="radio" name="radio">Male
+                        <input type="radio" name="radio">Female
+                        <input type="radio" name="radio">Other</td>
+                </tr>
+                <tr>
+                    <td><label>Date Of Birth:</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>Address:</label></td>
+                    <td><textarea cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Blood Group:</label></td>
+                    <td><select >
+                        <option value="">select</option>
+                        <option value="">A+</option>
+                        <option value="">A-</option>
+                        <option value="">B+</option>
+                        <option value="">B-</option>
+                        <option value="">O+</option>
+                        <option value="">O-</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Department:</label></td>
+                    <td><input type="checkbox">CSE
+                        <input type="checkbox">EEE
+                        <input type="checkbox">BBA</td>
+                </tr>
+                <tr>
+                    <td><label>Course:</label></td>
+                    <td><input type="checkbox">C
+                        <input type="checkbox">C++
+                        <input type="checkbox">Java
+                        <input type="checkbox">AI
+                        <input type="checkbox">Machine Learning
+                        <input type="checkbox">Robotics</td>
+                </tr>
+                <tr>
+                    <td><label>Photo:</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label>Submit</label></td>
+                    <td><button>Reset</button></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

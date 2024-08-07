@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" type="text/css" href="/Application/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/Application/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar  bg-danger navbar-expand ">
+
+        <a href="" class="text-white navbar-brand container-fluid">Hello</a>
+    </nav>
+    <section class="container-fluid mt-4">
+        <div class="row ">
+            <div class="col-md-5 m-auto ">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <img src="/Images/pizza.jpg" class="img-fluid" alt="not found">
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col">
+                                <button class="btn btn-success" id="like">Likes</button>
+                                <h3 id="val1"></h3>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger" id="dislike">Dislikes</button>
+                                <h3 id="val2"></h3>
+                            </div>
+                        </div>
+                   
+                        
+                    </div>
+                    <div class="card-footer text-center bg-danger text-white">
+                        <h3>Total:- <span id="tot"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        let likes = document.getElementById('like')
+        let dislikes = document.getElementById('dislike')
+        let val1 = document.getElementById('val1')
+        let val2 = document.getElementById('val2')
+        let tot = document.getElementById('tot')
+
+        let like =  localStorage.getItem('like')?localStorage.getItem('like'):0;
+        let dislike = localStorage.getItem('dislike')?localStorage.getItem('dislike'):0;
+        let totals = localStorage.getItem('totals')?localStorage.getItem('totals'):0;
+
+        // localStorage.clear();
+        
+        val1.textContent = like
+        val2.textContent = dislike
+        tot.textContent = totals
+            likes.addEventListener('click',()=>{
+            like++
+            localStorage.setItem('like',like)
+            val1.textContent = localStorage.getItem('like')
+
+
+            totals++
+            localStorage.setItem('totals',totals)
+
+            tot.textContent = localStorage.getItem('totals')
+            tot.style.color = 'black'
+            
+            tot.style.backgroundColor = 'white'
+            tot.style.padding = '5px 10px'
+
+            tot.style.borderRadius = '20px'
+            
+            
+        })
+        dislikes.addEventListener('click',()=>{
+            dislike++
+
+            localStorage.setItem('dislike',dislike)
+
+
+            val2.textContent = localStorage.getItem('dislike')
+
+            
+            totals++
+            localStorage.setItem('totals',totals)
+            tot.textContent = localStorage.getItem('totals')
+
+            tot.textContent = localStorage.getItem('totals')
+            tot.style.color = 'black'
+            tot.style.backgroundColor = 'white'
+            tot.style.padding = '5px 10px'
+
+            tot.style.borderRadius = '20px'
+            
+        })
+        
+
+
+    </script>
+</body>
+</html>

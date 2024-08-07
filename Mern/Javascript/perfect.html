@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfect number</title>
+</head>
+<body>
+    <h1>perfect number</h1>
+    <script>
+        
+
+        let num = 11
+        
+        let sum = 0
+
+        let i = 1
+
+        while(i<=num/2){
+            if(num%i==0){
+                sum = sum+i
+            }
+            i++
+        }
+
+        if(sum == num){
+            console.log(num+" is perfect number")
+        }
+        else{
+            console.log(num+"is not a perfect number")
+        }
+
+
+        
+        
+
+    </script>
+</body>
+</html>

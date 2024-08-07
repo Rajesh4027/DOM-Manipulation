@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        border:2px solid red;
+        display: grid;
+        height: 400px;
+        /* grid-template-columns: 30px 20px 40px 90px;
+        grid-template-rows:auto; */
+        /* grid-gap: 20px; */
+
+        grid-template-columns: repeat(4,auto);
+        /* grid-template-rows: auto; */
+        gap:30px;
+
+    }
+    .child{
+        background: yellow;
+
+    }
+    .a{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .b{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .c{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .d{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .e{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .f{
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+    .g{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .h{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .i{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .j{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    .k{
+        grid-column: 4/5;
+        grid-row: 4/5;
+    }
+</style>
+<body>
+    
+
+    <div class="container">
+        <div class="child a">Item 1</div>
+        <div class="child b">Item 2</div>
+        <div class="child c">Item 3</div>
+        <div class="child d">Item 4</div>
+        <div class="child e">Item 5</div>
+        <div class="child f">Item 6</div>
+        <div class="child g">Item 7</div>
+        <div class="child h">Item 8</div>
+        <div class="child i">Item 9</div>
+        <div class="child j">Item 10</div>
+        <div class="child k">Item 11</div>
+    </div>
+
+
+    
+</body>
+</html>

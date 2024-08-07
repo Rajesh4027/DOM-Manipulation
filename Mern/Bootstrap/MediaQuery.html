@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media Query</title>
+</head>
+<link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+<style>
+    div{
+        width: 300px;
+        height: 500px;
+        color: burlywood;
+        background-color: aqua;
+    }
+    h1{
+        background-color: blueviolet;
+        color:yellowgreen;
+
+    }
+    @media screen and (min-width:0px) and (max-width:400px) {
+        div{
+            background-color: chocolate;
+            font-size: 70px;
+            color: coral;
+        }
+        h1{
+            background-color: crimson;
+            color: darkgreen;
+            font-size: 90px;
+        }
+    }
+    @media (min-width:501px) and (max-width:700px) {
+        div{
+            background-color: chartreuse;
+            font-size: 400px;
+            color: aliceblue;
+        }
+        h1{
+            background-color: yellow;
+            font-size: 500px;
+            color:fuchsia;
+        }
+    }
+    @media (min-width:801px) and (max-width:1000px) {
+        div{
+            background-color:cornflowerblue;
+            font-size: 100px;
+            color:darkgoldenrod;
+        }
+        h1{
+            background-color: yellow;
+            font-size: 900px;
+            color:fuchsia;
+        }
+    }
+</style>
+<body>
+    <div>
+        Hello world
+    </div>
+    <h1>
+        This is a html page
+    </h1>
+</body>
+</html>

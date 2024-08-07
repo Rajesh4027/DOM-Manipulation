@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+img{
+    position: fixed;
+    width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.hel{
+    position: relative;
+}
+h1{ 
+    text-align: center;
+    padding-top: 30px;
+}
+form{
+    margin-top: 30px;
+}
+fieldset{
+    margin: 0 80px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    transition: transform .3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #CF9FFF;
+    background: linear-gradient(0deg, rgba(223, 115, 255 ,0.5579481792717087) 0%, rgba(223, 115, 255 ,0.46551120448179273) 100%);
+    
+}
+fieldset:hover{
+    transform: scale(1.1);
+}
+.Leg_head{
+    padding: 5px 12px;
+    border: 2px blue solid;
+    border-radius: 10px;
+    background-color: #FFA413 ;
+}
+td{
+    padding: 4px;
+    padding-top: 10px;
+    padding-left: 4px;
+}
+input{
+    width: 210px;
+    padding: 8px;
+    border-radius: 7px;
+}
+#select-item{
+    width: 228px;
+    padding: 8px;
+    border-radius: 7px;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 10px;
+}
+.yel tr td:first-child,.fun tr td:first-child,.other_i tr td:first-child{
+    padding: 0;
+}
+.yel tr td,.fun tr td{
+    padding-left: 80px;
+}
+.other_i tr td{
+    padding-left: 148px;
+}
+textarea{
+    border-radius: 7px;
+}
+button{
+    padding: 10px 25px;
+    background-color:#0073CF;
+    color: white;
+    border-radius: 9px;
+    font-size: 16px;   
+}
+button:hover{
+    background-color: #00FFA7;
+    box-shadow: 0 0 2px #7f7f7f;
+    color:#0073CF;
+}
+input:hover,textarea:hover,#other_i:hover{
+    box-shadow: 0 0 10px #0073CF;
+}

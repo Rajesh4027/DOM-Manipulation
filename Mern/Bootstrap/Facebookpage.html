@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Facebook</title>
+</head>
+<link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: bold;
+        }
+    p{
+        padding-top: 6px;
+        font-size: 20px;
+    }
+    td{
+        padding-top: 10px;
+    }
+    .show{
+        *{
+            padding-top: 0px;
+        }
+        h1{
+            margin-top: 10px;
+
+        }
+    }
+    *{
+        overflow: hidden;
+    }
+    .na_v{
+        margin-right:40px ;
+    }
+    input[type="text"]{
+        padding-right: 100px;
+        
+    }
+    
+</style>
+<body>
+    <div class="show row bg-primary px-5 py-1">
+        <div class="col nav px-2">
+            <h1 class="text-white">Facebook</h1>
+        </div>
+        <div class="na_v col-5">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Email or Phone</td>
+                        <td>Password</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text"></td>
+                        <td><input type="password"></td>
+                        <td><button>Log In</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">Keep me Logged In</td>
+                        <td>Forgot your password?</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="row px-5">
+        <div class="col p-3">
+            <h2>Connect with friends and the <br> world around you on Facebook</h2>
+            <div class="p-5">
+                <p><b>See photos and updates</b> from friends in News Feed</p>
+                <p><b>Share What's new</b> in your life on your timeline</p>
+                <p><b>Find more </b>of what you're looking for with graph search</h4>
+            </div>
+        </div>
+        <div class="na_v col-5">
+            <h2><b>Sign Up</b></h2>
+            <p>It's free and always will be</p>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input type="text" class="form-control"  placeholder="First name"></td>
+                        <td><input type="text" class="form-control" placeholder="Last name"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" class="form-control" placeholder="Email or mobile number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" class="form-control" placeholder="Re-enter email or mobile number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" class="form-control" placeholder="New Password"></td>
+                    </tr>
+                </table>
+                <div>
+                    <h4 class="my-2">Birthday</h4>
+                    <input type="month">
+                    <span>Why do I need to provide my birthday</span>
+                </div>
+                <div class="py-3">
+                    <input type="radio" name="name"> male
+                    <input type="radio" name="name">Female
+                </div>
+                <span>
+                    By clicking Sign Up, you agree to our Terms and <br> that you have read our Data Use Policy,including our Cookie Use.
+                </span>
+                <div>
+                    <button class="bg-success text-white px-5 py-2 my-2">
+                        Sign Up
+                    </button>
+                </div>
+                <hr>
+                <p>Create a Page for a celebrity, band or business</p>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
