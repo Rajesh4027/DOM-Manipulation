@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="/Application/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Application/bootstrap-4.0.0-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/Application/icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+     * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        
+    }
+    li>button{
+        float: right;
+    }
+   .summary{
+    display: none;
+   }
+</style>
+<body>
+    <nav class="navbar bg-danger container-fluid">
+        <a href="#" class="container-brand text-white">Zomato</a>
+        <button class="btn" id="login_id">Login</button>
+    </nav>
+
+    <section class="mt-5 container-fluid summary" id="form-el">
+        <div class="row px-1">
+            <div class="border border-info rounded py-4 m-auto col-md-8 ">
+                <div class="col">
+                    <form>
+                        <div class="card-header">
+                            <h3 class="">Todo List</h3>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" class="form-control my-2" placeholder="Task">
+                            <button class="btn btn-info" id="task">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- todo list below the section -->
+        <div class="row ">
+             <div class="col-md-8 m-auto pt-3">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary">
+                            <span class="text-dark">
+                                go to gym
+                            </span>
+                            <button class="btn btn-primary ">
+                                <i class="bi bi-pen"></i>
+                            </button>
+                            <button class="btn btn-danger mr-2">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </li>
+                        <li class="list-group-item list-group-item-primary mt-2">
+                            <span class="text-dark">
+                                Emi Checking
+                            </span>
+                            <button class="btn btn-primary ">
+                                <i class="bi bi-pen"></i>
+                            </button>
+                            <button class="btn btn-danger mr-2">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </li>
+                        <li class="list-group-item list-group-item-primary mt-2 ">
+                            <span class="text-dark">
+                                Eating breakfast
+                            </span>
+                            <button class="btn btn-primary">
+                                <i class="bi bi-pen"></i>
+                            </button>
+                            <button class="btn btn-danger mr-2">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let login = document.getElementById('login_id');
+        let form = document.getElementById('form-el');
+        let submit = document.getElementById('task');
+
+        login.addEventListener('click',()=>{
+            form.classList.remove('summary')
+        })
+
+    
+        
+    </script>
+</body>
+</html>
