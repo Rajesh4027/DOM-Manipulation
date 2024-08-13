@@ -1,49 +1,275 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>align-content property</title> 
-		<style> 
-			.main-container { 
-				display: flex; 
-				height: 400px; 
-				flex-wrap: wrap; 
-				align-content:space-evenly; 
-                justify-content: space-around;
-				background-color: green; 
-			} 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>align-content property</title>
+    <style>
+      .main-container {
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-around;
+        background-color: green;
+      }
+
+      .main-container div {
+        background-color: #f4f4f4;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 50px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .geeks {
+        font-size: 40px;
+        text-align: center;
+        color: #009900;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="geeks">GeeksforGeeks</div>
+    <h2>align-content: center;</h2>
+    <div class="main-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body>
+
+  <script>
+    // let a = "Rajesh"
+
+    // let b = a.charAt(Math.floor(Math.random()*6))
+
+    // let c = a.charAt(Math.floor(Math.random()*a.length))
+
+    // console.log(c);
+    // console.log(b);
+
+    // console.log(a.length);
+
+    // let viewers = "let's see my course"
+    // let isCustomerBanned = false
+    // let finance = true
+
+    // let replay;
+
+    // if(isCustomerBanned){
+    // 	replay='sorry'
+    // }
+    // else if(finance && viewers){
+    // 	replay = `enjoy ${viewers} finance content`
+    // }
+    // else if(viewers){
+    // 	replay = `enjoy ${viewers}`
+    // }
+    // else{
+    // 	replay="Still i am working"
+    // }
+
+    // console.log(replay);
+
+    // let my = prompt("Enter your name")
+
+    // if(my) {
+    // 	console.log(my  ?? "you didn't enter your name");
+    // }
+    // else{
+    // 	console.log("you didn't enter your name");
+    // }
+
+    // console.log(my.trim().length);
+
+    // function sum(num1,num2){
+    // 	return num1*num2
+    // }
+
+    // console.log(sum(1,2))
+
+    // let email = "rajesh23@gmail.com"
+
+    // console.log(email.slice(0,email.indexOf("@")));
+
+    // function toProperCase(name){
+
+    // 	return name.charAt(0).toUpperCase()+name.slice(1).toLowerCase()
+    // }
+
+    // console.log(toProperCase("helloWorld"));
+
+    // const myArr = []
+
+    // myArr[0] = "hello"
+    // myArr[1] = "world"
+    // myArr[2] = 2312
+    // myArr[3] = true
+
+    // console.log(myArr);
+
+    // console.log(myArr[myArr.length-1]);
+
+    // myArr.push("list")
+    // console.log(myArr);
+
+    // myArr.pop()
+    // console.log(myArr);
+
+    // myArr.unshift("fasdj")
+    // console.log(myArr);
+    // myArr.shift()
+    // console.log(myArr);
+
+    // myArr.splice(0,1);
+
+    // console.log(myArr);
+
+    // const newArry = myArr.join()
+
+    // console.log(newArry);
+
+    // const neww = newArry.split(",")
+    // console.log(neww);
+
+    // const movie = {
+    // 	actor:"Kavin",
+    // 	music:"Arr",
+    // 	director:"Lokesh",
+    // 	producer:"Kalpathi"
+    // }
+
+    // console.table(Object.values(movie));
+
+    // movie.actress = "trish"
+
+    // delete movie.producer
+
+    // console.log(movie.hasOwnProperty("actress"));
+
+    // for(let job in movie){
+    // 	console.log(`${job}, it's ${movie[job]}`);
+    // }
+
+    // const {music:myFavMusicDirector,director:myFavDirector} = movie;
+
+    // const {actor,producer,director,actress} = movie
+
+    // console.log(myFavMusicDirector,myFavDirector);
+
+    // console.log(actor,producer,director,actress);
+
+    // function sings({music,actor}){
+    // 	return `${music}`+`${actor}`;
+    // }
+
+    // console.log(sings(movie));
+
+    // const myPizza = {
+    //   size: "medium",
+    //   crust: "original",
+    //   bake: function () {
+    //     return console.log(`Baking a ${this.size} ${this.crust} crust pizza.`);
+    //   }
+    // };
+
+	// myPizza.bake();
+
+	// class Pizza{
+	// 	constructor(typePizza,sizePizza,crust){
+	// 		this.type = typePizza;
+	// 		this.size = sizePizza
+	// 		this.crust = crust
+	// 		this.toppings =[]
+
+	// 	}
+	// 	getToppings(){
+	// 		return this.toppings;
+	// 	}
+	// 	setToppings(toppingsPizza){
+	// 		this.toppings = toppingsPizza
+	// 	}
+	// 	bake(){
+	// 		return console.log(`Baking a ${this.size} ${this.crust} ${this.type} crust pizza with ${this.toppings}`);
+	// 	}
+	// }
+
+	// const mypizza = new Pizza("margarita","small","original");
+
+
+	// mypizza.setToppings("sausuage")
+	// mypizza.bake()
+
+	// console.log(mypizza.getToppings());
+
+	// console.log(mypizza.crust);
+
+
+	// class Pizza{
+	// 	constructor(sizePizza){
+	// 		this.size = sizePizza;
+	// 		this.crust = "original"
+	// 	}
+		
+	// 	getCrust(){
+	// 		return this.crust
+	// 	}
+	// 	setCrust(){
+	// 		this.crust = crustPizza;
+	// 	}
+	// }
+
+	// class specicalPizza extends Pizza{
+	// 	constructor(sizePizza){
+	// 		super(sizePizza)
+	// 			this.type = "margarita"
 			
-			.main-container div { 
-				background-color: #f4f4f4; 
-				width: 100px; 
-				margin: 10px; 
-				text-align: center; 
-				font-size: 50px; 
-			} 
-			h2 { 
-				text-align:center; 
-			} 
-			.geeks { 
-				font-size:40px; 
-				text-align:center; 
-				color:#009900; 
-				font-weight:bold; 
-			} 
-		</style> 
-	</head> 
-	<body> 
-		<div class = "geeks">GeeksforGeeks</div> 
-		<h2>align-content: center;</h2> 
-		<div class="main-container"> 
-			<div>1</div> 
-			<div>2</div> 
-			<div>3</div> 
-			<div>4</div> 
-			<div>5</div> 
-			<div>6</div> 
-			<div>7</div> 
-			<div>8</div> 
-			<div>9</div> 
-			<div>10</div> 
-		</div> 
-	</body> 
-</html>					 
+	// 	}
+	// 	slice(){
+	// 		console.log(`Our ${this.type} ${this.size} pizza has 8 slices`);
+	// 	}
+	// }
+
+	// const myspecial = new specicalPizza("medium")
+
+	// myspecial.slice()
+
+
+	// const myObj = {
+	// 	name:"Helloworld",
+	// 	content:["Earn","Grow","Give"],
+	// 	sub:function(){
+	// 		console.log("Thanks for clicking bell icon");
+	// 	}
+	// };
+
+
+	// console.log(myObj);
+	// console.log(myObj.content);
+	// console.log(myObj.name);
+	// myObj.sub()
+
+	// const sendJSON = JSON.stringify(myObj)
+
+
+	// console.log(sendJSON);
+	
+	// const receiveJSON = JSON.parse(sendJSON)
+
+	// console.log(receiveJSON);
+
+	
+	
+
+
+  </script>
+</html>
