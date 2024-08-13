@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/js/bootstrap.min.js">
+
+</head>
+<body>
+   <div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-5 m-auto" id="form-el">
+            <div class="card">
+                <div class="card-header bg-danger text-white text-center">
+                    <h2>Sales ended in</h2>
+                </div>
+                <div class="card-body text-center">
+                    <h1>
+                        <span id="min">00</span>
+                        <span id="min-sec">00</span>
+                        <span id="m-sec">00</span>
+                    </h1>
+                    <div class="mt-3">
+                        <button id="start-btn" class="btn mx-2 btn-success">Start</button>
+                        <button id="stop-btn" class="btn mx-2 btn-danger">Stop</button>
+                        <button id="reset-btn" class="btn mx-2 btn-warning">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <script>
+    let mintag = document.getElementById('min')
+    let minsectag = document.getElementById('minsec')
+    let msectag = document.getElementById('msec')
+    let start = document.getElementById('start-btn')
+    let stop = document.getElementById('stop-btn')
+    let reset = document.getElementById('reset-btn')
+
+    
+   </script>
+</body>
+</html>
