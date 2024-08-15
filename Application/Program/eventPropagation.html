@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        padding: 50px;
+        background-color: yellowgreen;
+        height: 200px;
+        width: 200px;
+    }
+    #child{
+        padding: 50px;
+        background-color: aqua;
+        width: 70px;
+        height: 60px;
+    }
+    
+    #btn{
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+</style>
+<body>
+    <h1>Event Propagation</h1>
+
+    <div class="parent">
+        <div id="child">
+            
+                <button id="btn">Click me</button>
+            
+        </div>
+    </div>
+
+    <script>
+
+        let parent  = document.querySelector('.parent')
+        let child = document.getElementById('child')
+        let btn  = document.querySelector('#btn')
+
+
+        parent.addEventListener('click',()=>{
+            console.log("parent button clicked ");
+        })
+        child.addEventListener('click',()=>{
+            console.log("child button clicked ");
+        })
+        btn.addEventListener('click',()=>{
+            console.log("button clicked ");
+        })
+
+
+
+    </script>
+</body>
+</html>
