@@ -59,15 +59,31 @@
         // event capturing
 
 
-        parent.addEventListener('click',()=>{
+        // parent.addEventListener('click',()=>{
+        //     console.log("parent button clicked ");
+        // },capture=true)
+        // child.addEventListener('click',()=>{
+        //     console.log("child button clicked ");
+        // },capture=true)
+        // btn.addEventListener('click',()=>{
+        //     console.log("button clicked ");
+        // },capture=true)
+
+
+        //stop propagation
+        
+        parent.addEventListener('click',(e)=>{
+            e.stopPropagation()
             console.log("parent button clicked ");
-        },capture=true)
-        child.addEventListener('click',()=>{
+        })
+        child.addEventListener('click',(e)=>{
+            e.stopPropagation()
             console.log("child button clicked ");
-        },capture=true)
-        btn.addEventListener('click',()=>{
+        })
+        btn.addEventListener('click',(e)=>{
+            e.stopPropagation()
             console.log("button clicked ");
-        },capture=true)
+        })
 
         
     </script>
