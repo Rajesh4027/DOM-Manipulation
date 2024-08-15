@@ -44,18 +44,32 @@
         let btn  = document.querySelector('#btn')
 
 
+        // parent.addEventListener('click',()=>{
+        //     console.log("parent button clicked ");
+        // })
+        // child.addEventListener('click',()=>{
+        //     console.log("child button clicked ");
+        // })
+        // btn.addEventListener('click',()=>{
+        //     console.log("button clicked ");
+        // })
+
+
+
+        // event capturing
+
+
         parent.addEventListener('click',()=>{
             console.log("parent button clicked ");
-        })
+        },capture=true)
         child.addEventListener('click',()=>{
             console.log("child button clicked ");
-        })
+        },capture=true)
         btn.addEventListener('click',()=>{
             console.log("button clicked ");
-        })
+        },capture=true)
 
-
-
+        
     </script>
 </body>
 </html>
