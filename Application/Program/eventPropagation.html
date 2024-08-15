@@ -24,24 +24,34 @@
         padding: 10px;
         border-radius: 10px;
     }
+    #btn1,#btn2,#btn3{
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
 
 </style>
 <body>
     <h1>Event Propagation</h1>
 
-    <div class="parent">
+    <!-- <div class="parent">
         <div id="child">
             
                 <button id="btn">Click me</button>
             
         </div>
-    </div>
+    </div> -->
+
+    <div class="parent">
+        <button id="btn1">Btn 1</button>
+        <button id="btn2">Btn 2</button>
+        <button id="btn3">Btn 3</button></div>
 
     <script>
 
         let parent  = document.querySelector('.parent')
-        let child = document.getElementById('child')
-        let btn  = document.querySelector('#btn')
+        // let child = document.getElementById('child')
+        // let btn  = document.querySelector('#btn')
 
 
         // parent.addEventListener('click',()=>{
@@ -72,17 +82,37 @@
 
         //stop propagation
         
+        // parent.addEventListener('click',(e)=>{
+        //     e.stopPropagation()
+        //     console.log("parent button clicked ");
+        // })
+        // child.addEventListener('click',(e)=>{
+        //     e.stopPropagation()
+        //     console.log("child button clicked ");
+        // })
+        // btn.addEventListener('click',(e)=>{
+        //     e.stopPropagation()
+        //     console.log("button clicked ");
+        // })
+
+        //event delegation
+
         parent.addEventListener('click',(e)=>{
-            e.stopPropagation()
-            console.log("parent button clicked ");
-        })
-        child.addEventListener('click',(e)=>{
-            e.stopPropagation()
-            console.log("child button clicked ");
-        })
-        btn.addEventListener('click',(e)=>{
-            e.stopPropagation()
-            console.log("button clicked ");
+            // console.log(event.target);
+
+            let child_id = e.target.id
+
+            // console.log(child_id);
+
+            if(child_id=="btn1"){
+                console.log("btn1 clicked");
+            }
+            if(child_id=="btn2"){
+                console.log("btn2 clicked");
+            }
+            if(child_id=="btn3"){
+                console.log("btn3 clicked");
+            }
         })
 
         
